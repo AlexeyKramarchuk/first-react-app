@@ -1,24 +1,24 @@
-import './employers-add-form.css';
+import './employees-add-form.css';
 
-const EmployersAddForm = () => {
+const EmployeesAddForm = () => {
     return (
         <div className="app-add-form">
-            <h3>Добавьте нового сотрудника</h3>
+            <h3>Add a new employee</h3>
             <form
                 className="add-form d-flex">
                 <input type="text"
                     className="form-control new-post-label"
-                    placeholder="Как его зовут?" />
+                    placeholder="Name?" />
                 <input type="number"
                     className="form-control new-post-label"
-                    placeholder="З/П в $?" />
+                    placeholder="Salary/$?" />
 
                 <button type="submit"
-                        className="btn btn-outline-light">Добавить</button>
+                        className="btn btn-outline-light">Add</button>
             </form>
         </div>
     )
 }
 
-export default EmployersAddForm;
+export default EmployeesAddForm;
 
