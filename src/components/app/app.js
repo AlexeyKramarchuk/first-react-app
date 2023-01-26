@@ -8,26 +8,25 @@ import './app.css';
 
 function App() {
 
-const data = [
-    {name: 'Jonh C.', salary: 800, increase: false},
-    {name: 'Alex K.', salary: 3000, increase: true},
-    {name: 'Max B.', salary: 5000, increase: false},
-]
+    const data = [
+        {name: 'John C.', salary: 800, increase: false, id: 1},
+        {name: 'Alex M.', salary: 3000, increase: true, id: 2},
+        {name: 'Carl W.', salary: 5000, increase: false, id: 3}
+    ];
 
     return (
         <div className="app">
-            <AppInfo/>
+            <AppInfo />
 
             <div className="search-panel">
                 <SearchPanel/>
                 <AppFilter/>
             </div>
-
+            
             <EmployeesList data={data}/>
             <EmployeesAddForm/>
         </div>
     );
 }
-
 
 export default App;
